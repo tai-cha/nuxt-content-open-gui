@@ -7,10 +7,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint",
+    "lint:fix": "pnpm run lint -- --fix"
   },
   "dependencies": {
     "nuxt": "^3.12.3",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.3.13",
+    "eslint": "^9.6.0",
+    "typescript": "^5.5.3",
+    "vue-tsc": "^2.0.26"
   }
 }
